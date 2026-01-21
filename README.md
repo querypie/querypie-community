@@ -1,12 +1,22 @@
 # QueryPie ACP Community Edition
 
-## 🧭 Before You Start
-**QueryPie ACP Community Edition** lets you experience the core features available in **QueryPie ACP Enterprise Edition**:
+## What is QueryPie Access Control Platform (ACP)?
 
-- Database Access Controller
-- System Access Controller
-- Kubernetes Access Controller
-- Web Access Controller
+QueryPie Access Control Platform (ACP) is an integrated access control solution that provides **DAC, SAC, KAC, WAC** in a single unified platform.
+It covers both cloud and on-premises environments, providing unified management of all access from databases to systems, Kubernetes, and web applications.
+
+### Core Product Components
+
+* DAC (Database Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/database-access-controller)
+* SAC (System Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/system-access-controller)
+* KAC (Kubernetes Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/kubernetes-access-controller)
+* WAC (Web Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/web-access-controller)
+
+It enhances enterprise data security through RBAC/ABAC-based dynamic access control, web SQL editor, real-time auditing, and anomaly detection alerts. With Docker-based easy installation and web-based interface, it provides a hybrid solution that combines the convenience of SaaS with the powerful security of on-premises.
+
+
+## 🧭 Before You Start
+**QueryPie ACP Community Edition** lets you experience the key features available in **QueryPie ACP Enterprise Edition**:
 
 **Important:** Community Edition supports **up to 5 active users** only.
 *(If you need to register more than 5 users, please consider upgrading to the [Enterprise Plan](https://www.querypie.com/plans).)*
