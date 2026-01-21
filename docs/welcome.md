@@ -64,4 +64,4 @@ Welcome to the official community space for **QueryPie ACP**. This space is desi
 * **Show and tell**: 여러분이 **QueryPie ACP**를 어떻게 활용하고 있는지, 멋진 설정 사례를 공유해 주세요!
 
 ---
-*© 2026 QueryPie, Inc. All rights reserved.*
+*&copy; 2026 QueryPie, Inc. All rights reserved.*
