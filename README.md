@@ -1,7 +1,8 @@
-# QueryPie Community Edition
+# QueryPie ACP Community Edition
 
 ## 🧭 Before You Start
-**QueryPie Community Edition** lets you experience the core features available in **QueryPie Enterprise**:
+**QueryPie ACP Community Edition** lets you experience the core features available in **QueryPie ACP Enterprise Edition**:
+
 - Database Access Controller
 - System Access Controller
 - Kubernetes Access Controller
@@ -10,7 +11,7 @@
 **Important:** Community Edition supports **up to 5 active users** only.
 *(If you need to register more than 5 users, please consider upgrading to the [Enterprise Plan](https://www.querypie.com/plans).)*
 
-QueryPie runs as a typical web application and also includes proxy-based network server functionality.
+QueryPie ACP runs as a typical web application and also includes proxy-based network server functionality.
 
 ---
 
