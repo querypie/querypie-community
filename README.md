@@ -7,8 +7,8 @@
 - Kubernetes Access Controller
 - Web Access Controller
 
-**Important:** Community Edition supports **up to 5 user registrations** only.
-*(If you need more than 5 users, please consider upgrading to the [Enterprise Plan](https://querypie.com/plans).)*
+**Important:** Community Edition supports **up to 5 active users** only.
+*(If you need to register more than 5 users, please consider upgrading to the [Enterprise Plan](https://www.querypie.com/plans).)*
 
 QueryPie runs as a typical web application and also includes proxy-based network server functionality.
 
@@ -16,31 +16,43 @@ QueryPie runs as a typical web application and also includes proxy-based network
 
 ## 🖥️ Server Requirements
 
-### Minimum System Requirements
-For basic testing and small deployments:
+### Basic Specifications
 
 - **CPU:** 4 vCPUs (AMD64 Architecture)
 - **Memory:** 16 GB RAM
 - **Storage:** 100 GB+ disk space
-- **OS:** Linux with Docker daemon
+- **OS:** Linux with Docker or Podman
 
 **Cloud Instances:**
 - **AWS EC2:** `m6i.xlarge` or `m7i.xlarge`
 - **GCP Compute Engine:** `c4-standard-4`, `n4-standard-4` (or any AMD64 -standard-4 models)
 
+### Trial Use
+For developers testing and trial purposes (ARM64 supported):
+
+- **CPU:** 4 vCPUs (ARM64 Architecture)
+- **Memory:** 16 GB RAM
+- **Storage:** 30 GB+ disk space
+- **OS:** Linux or macOS with Docker
+
+**Cloud Instances:**
+- **AWS EC2:** `t4g.xlarge` or `m7g.xlarge`
+
 ### Recommended for Production
 For multi-user production environments:
 
-- **CPU:** 8 vCPUs (AMD64 Architecture)  
+- **CPU:** 8 vCPUs (AMD64 Architecture)
 - **Memory:** 32 GB RAM
 - **Storage:** 100 GB+ disk space
-- **OS:** Linux with Docker daemon
+- **OS:** Linux with Docker or Podman
 
 **Cloud Instances:**
 - **AWS EC2:** `m6i.2xlarge` or `m7i.2xlarge`
 - **GCP Compute Engine:** `c4-standard-8`, `n4-standard-8` (or any AMD64 -standard-8 models)
 
-> 📄 For detailed requirements, see: [Prerequisites for Installation - Single Machine](https://querypie.atlassian.net/wiki/spaces/QCP/pages/865009675/Prerequisites+for+Installation+-+Single+Machine+EN)
+> **Note:** ARM64 Architecture CPU environments or macOS environments are recommended for trial use and testing purposes for developers.
+
+> 📄 For detailed requirements, see: [Prerequisites](https://docs.querypie.com/installation/prerequisites)
 
 ---
 
@@ -53,7 +65,7 @@ QueryPie installation is automated using Docker. Follow these simple steps:
 Open your Linux server terminal and run this single command from your home directory:
 
 ```bash
-bash <(curl https://dl.querypie.com/setup.v2.sh)
+bash <(curl -s https://dl.querypie.com/setup.v2.sh)
 ```
 
 > ⏱️ **Installation time:** Typically 7-10 minutes
@@ -120,9 +132,42 @@ Congratulations! QueryPie is now ready to use.
 </p>
 
 **Next Steps:**
-- Check out the [Administrator Manual](https://docs.querypie.com/en/querypie-manual/11.0.0/-2) for environment setup
+- Check out the [Administrator Manual](https://docs.querypie.com/administrator-manual) for environment setup
+- Click the `Go to Admin Page` button in the top right corner to navigate to the administrator page
 - Start configuring your database connections
 - Invite team members (up to 5 users)
+
+---
+
+## 📁 Installation Location & Manual Operations
+
+**Installation Location:**
+- Mac, Linux: `<folder where the installation script was executed>/querypie/<version>`
+- Example: `/Users/brendon/querypie/11.5.0` or `/home/brendon/querypie/11.5.0`
+
+**Manual Start:**
+```bash
+cd ~/querypie/11.5.0
+docker compose --profile=database up -d
+docker compose --profile=app up -d
+```
+
+**Verify Normal Startup:**
+```bash
+docker compose --profile=app exec app readyz
+```
+
+**Manual Stop:**
+```bash
+cd ~/querypie/11.5.0
+docker compose --profile=app down
+docker compose --profile=database down
+```
+
+**Verify Normal Shutdown:**
+```bash
+docker compose ps
+```
 
 ---
 
