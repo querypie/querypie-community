@@ -1,0 +1,88 @@
+title: "[Q&A] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🙏 Q&A Template
+        Thank you for using QueryPie ACP Community Edition!
+        Please fill out the template below for faster and more accurate support.
+
+        ---
+        QueryPie ACP Community Editionをご利用いただきありがとうございます！
+        迅速な回答のために、以下のテンプレートにご記入ください。
+
+        ---
+        QueryPie ACP Community Edition을 이용해 주셔서 감사합니다!
+        원활한 답변을 위해 아래 템플릿을 작성해 주세요.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "📝 Summary (要約 / 요약)"
+      description: "Briefly describe your question or issue. / 質問や問題を簡単に説明してください。 / 질문이나 문제를 간단히 설명해 주세요."
+      placeholder: "e.g., Unable to connect to PostgreSQL database after installation"
+    validations:
+      required: true
+
+  - type: input
+    id: querypie-version
+    attributes:
+      label: "QueryPie ACP Version"
+      description: "Which version of QueryPie ACP are you using?"
+      placeholder: "e.g., 11.5.0"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: "OS"
+      description: "Operating System and version"
+      placeholder: "e.g., Ubuntu 22.04, CentOS 7, Windows 11"
+    validations:
+      required: true
+
+  - type: input
+    id: database
+    attributes:
+      label: "Database Type & Version"
+      description: "Database you're connecting to or using"
+      placeholder: "e.g., PostgreSQL 15, MySQL 8.0, Oracle 19c"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: installation-method
+    attributes:
+      label: "Installation Method"
+      description: "How did you install QueryPie ACP?"
+      options:
+        - Docker
+        - Docker Compose
+        - Helm Chart (Kubernetes)
+        - Binary
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: "❓ Question (質問内容 / 질문 내용)"
+      description: "Describe your question or issue in detail. / 質問内容を詳しく記載してください。 / 질문 내용을 자세히 작성해 주세요."
+      placeholder: |
+        What happened? What did you expect to happen?
+        何が起きましたか？期待していた結果は何ですか？
+        무엇이 발생했나요? 기대했던 결과는 무엇인가요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots-logs
+    attributes:
+      label: "📸 Screenshots or Logs (スクリーンショットまたはログ / 스크린샷 또는 로그)"
+      description: "Add screenshots or relevant logs to help explain your issue. / 問題の説明に役立つスクリーンショットやログを添付してください。 / 문제 설명에 도움이 되는 스크린샷이나 로그를 첨부해 주세요."
+      placeholder: "Paste logs or drag and drop images here"
+    validations:
+      required: false
