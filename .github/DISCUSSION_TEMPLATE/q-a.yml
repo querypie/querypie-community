@@ -58,7 +58,8 @@ body:
       label: "Installation Method"
       description: "How did you install QueryPie ACP?"
       options:
-        - Docker Compose
+        - Docker & Docker Compose
+        - Podman & Docker Compose
         - Helm Chart (Kubernetes)
         - Other
     validations:
