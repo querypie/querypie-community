@@ -196,6 +196,6 @@ docker compose ps
 
 Join our community for help and discussions:
 
-🔗 [Official QueryPie Discord Channel](https://discord.com/invite/Cu39M55gMk)
+🔗 [GitHub Discussions](https://github.com/querypie/querypie-community/discussions)
 
 Get support, ask questions, and share insights with other QueryPie users!
