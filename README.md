@@ -2,24 +2,24 @@
 
 ## What is QueryPie Access Control Platform (ACP)?
 
-QueryPie Access Control Platform (ACP) is an integrated access control solution that provides **DAC, SAC, KAC, WAC** in a single unified platform.
+QueryPie Access Control Platform (ACP) is an integrated access control solution that provides **DAC, SAC, KAC, WAC, and MCP Access Control** in a single unified platform.
 It covers both cloud and on-premises environments, providing unified management of all access from databases to systems, Kubernetes, and web applications.
 
-### Core Product Components
+### Access Control Components
 
-* DAC (Database Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/database-access-controller)
-* SAC (System Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/system-access-controller)
-* KAC (Kubernetes Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/kubernetes-access-controller)
-* WAC (Web Access Controller): [Preview of Key Features](https://www.querypie.com/solutions/acp/web-access-controller)
+- **[DAC (Database Access Controller)](https://docs.querypie.com/en/user-manual/database-access-control):** Database access control and auditing
+- **[SAC (System Access Controller)](https://docs.querypie.com/en/user-manual/server-access-control):** System and server access control
+- **[KAC (Kubernetes Access Controller)](https://docs.querypie.com/en/user-manual/kubernetes-access-control):** Kubernetes cluster access control
+- **[WAC (Web Access Controller)](https://docs.querypie.com/en/user-manual/web-access-control):** Web application access control and activity monitoring
+- **[MCP Access Control](https://docs.querypie.com/en/user-manual/mcp-access-control):** Remote MCP server access control
 
 It enhances enterprise data security through RBAC/ABAC-based dynamic access control, web SQL editor, real-time auditing, and anomaly detection alerts. With Docker-based easy installation and web-based interface, it provides a hybrid solution that combines the convenience of SaaS with the powerful security of on-premises.
 
-
 ## 🧭 Before You Start
-**QueryPie ACP Community Edition** lets you experience the key features available in **QueryPie ACP Enterprise Edition**:
 
-**Important:** Community Edition supports **up to 5 active users** only.
-*(If you need to register more than 5 users, please consider upgrading to the [Enterprise Plan](https://www.querypie.com/plans).)*
+**QueryPie ACP Community Edition** includes DAC, SAC, KAC, and MCP Access Control for **up to 5 active users**.
+WAC is available with the Enterprise Edition.
+See the [ACP plans](https://www.querypie.com/en/plans/acp) for an edition comparison and the [Community Edition guide](https://docs.querypie.com/en/installation/querypie-acp-community-edition) for current installation guidance.
 
 QueryPie ACP runs as a typical web application and also includes proxy-based network server functionality.
 
@@ -30,7 +30,7 @@ QueryPie ACP runs as a typical web application and also includes proxy-based net
 ### Basic Specifications
 
 - **CPU:** 4 vCPUs (AMD64 Architecture)
-- **Memory:** 16 GB RAM
+- **Memory:** 16 GiB RAM
 - **Storage:** 100 GB+ disk space
 - **OS:** Linux with Docker or Podman
 
@@ -42,7 +42,7 @@ QueryPie ACP runs as a typical web application and also includes proxy-based net
 For developers testing and trial purposes (ARM64 supported):
 
 - **CPU:** 4 vCPUs (ARM64 Architecture)
-- **Memory:** 16 GB RAM
+- **Memory:** 16 GiB RAM
 - **Storage:** 30 GB+ disk space
 - **OS:** Linux or macOS with Docker
 
@@ -53,7 +53,7 @@ For developers testing and trial purposes (ARM64 supported):
 For multi-user production environments:
 
 - **CPU:** 8 vCPUs (AMD64 Architecture)
-- **Memory:** 32 GB RAM
+- **Memory:** 32 GiB RAM
 - **Storage:** 100 GB+ disk space
 - **OS:** Linux with Docker or Podman
 
@@ -63,7 +63,7 @@ For multi-user production environments:
 
 > **Note:** ARM64 Architecture CPU environments or macOS environments are recommended for trial use and testing purposes for developers.
 
-> 📄 For detailed requirements, see: [Prerequisites](https://docs.querypie.com/installation/prerequisites)
+> 📄 For detailed requirements, see: [Prerequisites](https://docs.querypie.com/en/installation/prerequisites)
 
 ---
 
@@ -90,7 +90,7 @@ bash <(curl -s https://dl.querypie.com/setup.v2.sh)
 
 While installation is running, apply for your free license:
 
-1. Fill out the [license application form](https://querypie.com/querypie/license/community/apply)
+1. Fill out the [license application form](https://www.querypie.com/en/querypie/license/community/apply)
 2. A `.crt` license file will be sent to your email
 
 ### Step 3: Access QueryPie
@@ -98,9 +98,9 @@ While installation is running, apply for your free license:
 Once installation completes, open QueryPie in your browser:
 
 ```
-http://<your-server-ip>
+http://<your-server-ip>:8000
 or  
-https://<your-server-ip>
+https://<your-server-ip>:8443
 ```
 
 > **Note:** Make sure your server IP is accessible from your computer
@@ -143,7 +143,7 @@ Congratulations! QueryPie is now ready to use.
 </p>
 
 **Next Steps:**
-- Check out the [Administrator Manual](https://docs.querypie.com/administrator-manual) for environment setup
+- Check out the [Administrator Manual](https://docs.querypie.com/en/administrator-manual) for environment setup
 - Click the `Go to Admin Page` button in the top right corner to navigate to the administrator page
 - Start configuring your database connections
 - Invite team members (up to 5 users)
@@ -154,11 +154,12 @@ Congratulations! QueryPie is now ready to use.
 
 **Installation Location:**
 - Mac, Linux: `<folder where the installation script was executed>/querypie/<version>`
-- Example: `/Users/brendon/querypie/11.5.0` or `/home/brendon/querypie/11.5.0`
+- Example: `/Users/<username>/querypie/<version>` or `/home/<username>/querypie/<version>`
+- The `current` symbolic link points to the installed version directory
 
 **Manual Start:**
 ```bash
-cd ~/querypie/11.5.0
+cd ~/querypie/current
 docker compose --profile=database up -d
 docker compose --profile=app up -d
 ```
@@ -170,7 +171,7 @@ docker compose --profile=app exec app readyz
 
 **Manual Stop:**
 ```bash
-cd ~/querypie/11.5.0
+cd ~/querypie/current
 docker compose --profile=app down
 docker compose --profile=database down
 ```
