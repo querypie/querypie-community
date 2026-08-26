@@ -13,7 +13,8 @@ Select your language:
 Welcome to the official community space for **QueryPie ACP**. This space is designed for users of the Community Edition to share experiences, exchange technical help, and grow together.
 
 ### About Community Edition
-**QueryPie ACP** is a professional solution providing powerful access control capabilities. We offer the **Community Edition with full features and no functional limitations** for free, so that independent developers, students, and small teams can experience the complete power of **QueryPie ACP**.
+**QueryPie ACP** is a professional platform providing powerful access control capabilities.
+Community Edition provides DAC, SAC, KAC, and MCP Access Control for up to five active users at no cost, making it suitable for independent developers, students, and small teams.
 
 ### How to use our Categories
 * **Announcements**: Check here for official updates, security patches, and release notes for **QueryPie ACP**.
@@ -33,7 +34,8 @@ Welcome to the official community space for **QueryPie ACP**. This space is desi
 **QueryPie ACP** の公式コミュニティへようこそ。このスペースは、Community Editionを利用するユーザー同士が経験を共有し、技術的な助け合いを通じて共に成長するために用意されました。
 
 ### Community Edition 紹介
-**QueryPie ACP** は、強力なアクセス制御機能を提供するプロフェッショナルなソリューションです。個人開発者、学生、小規模チームが **QueryPie ACP** のすべての機能を体験できるよう、**機能制限のないフル機能を備えた Community Edition** を無料で提供しています。
+**QueryPie ACP** は、強力なアクセス制御機能を提供するプロフェッショナルなプラットフォームです。
+Community Edition では、DAC、SAC、KAC、MCP Access Control を最大5名のアクティブユーザーまで無料で利用でき、個人開発者、学生、小規模チームに適しています。
 
 ### カテゴリの活用方法
 * **Announcements**: **QueryPie ACP** の公式アップデート、セキュリティパッチ、リリースノートを確認してください。
@@ -53,7 +55,8 @@ Welcome to the official community space for **QueryPie ACP**. This space is desi
 **QueryPie ACP**의 공식 커뮤니티 공간에 오신 것을 환영합니다. 이 공간은 커뮤니티 에디션을 사용하시는 유저분들이 서로 경험을 공유하고, 기술적인 도움을 주고받으며 함께 성장하기 위해 마련되었습니다.
 
 ### 커뮤니티 에디션 소개
-**QueryPie ACP**는 강력한 접근제어 기능을 제공하는 전문 솔루션입니다. 독립 개발자, 학생, 그리고 소규모 팀이 **QueryPie ACP**의 모든 가치를 경험해 볼 수 있도록 **기능 제한이 없는 전체 기능을 Community Edition에서 무료로 제공**합니다.
+**QueryPie ACP**는 강력한 접근 제어 기능을 제공하는 전문 플랫폼입니다.
+Community Edition은 DAC, SAC, KAC, MCP Access Control을 최대 5명의 활성 사용자까지 무료로 제공하며, 독립 개발자, 학생, 소규모 팀에 적합합니다.
 
 ### 카테고리 활용 방법
 * **Announcements**: **QueryPie ACP**의 공식 업데이트 소식, 보안 패치, 새로운 기능 릴리스 노트를 확인하세요.
